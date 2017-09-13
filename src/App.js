@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 
@@ -12,10 +12,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src='../images/spaceship.png' className="App-logo" alt="logo" />
           <h2>Welcome to the Universe</h2>
         </div>
-        <Spaceship name="Enterprise">
+        <Spaceship name="Enterprise" commanderType="BadAlien">
             <CrewMember name="Wesley Crusher" rank="Ensign"/>
             <CrewMember name="Riker" rank="Commander"/>
             <BadAlien name="Borg" species="Borg"/>
