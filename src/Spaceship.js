@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-
+//proptypes node = anything renderable
 class Spaceship extends Component {
     static propTypes = {
         name: PropTypes.string,
-        children: PropTypes.element.isRequired
+        children: PropTypes.node.isRequired
     };
     render(){
         const { name, children } = this.props;
